@@ -1,0 +1,47 @@
+# Diretórios gerados
+node_modules/
+.angular/
+dist/
+tmp/
+out-tsc/
+.cache/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs e depuração
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor e IDEs
+.vscode/
+.idea/
+*.sw?
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Relatórios de teste e cobertura
+coverage/
+karma-*.xml
+test-results.xml
+*.lcov
+
+# Angular outputs
+.sass-cache/
+.angular/cache/
+.angular/config.json
+
+# Arquivos de build
+*.tgz
+*.gz
+*.zip
+
+# Backup
+*.bak
+*.tmp
