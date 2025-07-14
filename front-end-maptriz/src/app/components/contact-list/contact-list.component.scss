@@ -1,0 +1,45 @@
+.main-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .spacer { flex: 1 1 auto; }
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.search-section {
+  margin: 1rem 0;
+  .search-field {
+    width: 100%;
+  }
+}
+
+.tabs {
+  margin-bottom: 1rem;
+}
+
+.table-wrapper {
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mat-header-row {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.mat-row:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+mat-paginator {
+  display: flex;
+  justify-content: flex-end;
+}

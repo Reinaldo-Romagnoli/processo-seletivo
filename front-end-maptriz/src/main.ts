@@ -1,12 +1,40 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import 'zone.js';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter }        from '@angular/router';
+import { provideAnimations }    from '@angular/platform-browser/animations';
+import { provideHttpClient }    from '@angular/common/http';
+import { importProvidersFrom }  from '@angular/core';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+// Módulos de formulário clássicos
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-if (environment.production) {
-  enableProdMode();
-}
+// Modules do Angular Material
+import { MatFormFieldModule }   from '@angular/material/form-field';
+import { MatInputModule }       from '@angular/material/input';
+import { MatIconModule }        from '@angular/material/icon';
+import { MatButtonModule }      from '@angular/material/button';
+import { MatSnackBarModule }    from '@angular/material/snack-bar';
+import { MatTableModule }       from '@angular/material/table';
+import { MatPaginatorModule }   from '@angular/material/paginator';
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+import { AppComponent } from './app/app.component';
+import { appRoutes }    from './app/app-routing.module';
+
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter(appRoutes),
+    provideAnimations(),
+    provideHttpClient(),
+    importProvidersFrom(
+      FormsModule,
+      ReactiveFormsModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatIconModule,
+      MatButtonModule,
+      MatSnackBarModule,
+      MatTableModule,
+      MatPaginatorModule
+    )
+  ]
+}).catch(err => console.error(err));

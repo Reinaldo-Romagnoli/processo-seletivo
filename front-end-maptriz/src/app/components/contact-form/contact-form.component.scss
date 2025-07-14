@@ -1,0 +1,62 @@
+.contact-form-container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+.voltar-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.contact-card {
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+mat-form-field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.endereco-group {
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
