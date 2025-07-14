@@ -1,4 +1,4 @@
-package com.desafio.agenda;
+package Agendador.example.Agendador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 				"Agendador.example.Agendador"
 		}
 )
-public class AgendaApplication {
+public class AgendadorApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(AgendaApplication.class, args);
+		SpringApplication.run(AgendadorApplication.class, args);
 	}
+
 }
